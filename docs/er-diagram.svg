@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 26px; font-weight: 700; }
+    .head { fill: #1f4e79; }
+    .box { fill: #f8fbff; stroke: #1f4e79; stroke-width: 2; }
+    .line { stroke: #4d6b86; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+    .h { fill: white; font-size: 18px; font-weight: 700; }
+    .field { font-size: 16px; }
+    .note { font-size: 15px; font-style: italic; fill: #526275; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0, 9 3.5, 0 7" fill="#4d6b86"/></marker>
+  </defs>
+  <text x="600" y="42" text-anchor="middle" class="title">Схема базы данных парикмахерской</text>
+
+  <path d="M300 205 C410 205 455 270 520 310" class="line"/>
+  <path d="M900 205 C790 205 745 270 680 310" class="line"/>
+  <path d="M600 220 L600 305" class="line"/>
+  <text x="350" y="235" class="note">1 : M</text>
+  <text x="805" y="235" class="note">1 : M</text>
+  <text x="618" y="270" class="note">1 : M</text>
+
+  <g transform="translate(70 90)">
+    <rect width="270" height="180" rx="5" class="box"/>
+    <rect width="270" height="42" rx="5" class="head"/>
+    <text x="135" y="28" text-anchor="middle" class="h">Clients — Клиенты</text>
+    <text x="18" y="72" class="field">PK ClientId</text>
+    <text x="18" y="99" class="field">LastName, FirstName</text>
+    <text x="18" y="126" class="field">MiddleName</text>
+    <text x="18" y="153" class="field">Phone, Address</text>
+  </g>
+
+  <g transform="translate(860 90)">
+    <rect width="270" height="160" rx="5" class="box"/>
+    <rect width="270" height="42" rx="5" class="head"/>
+    <text x="135" y="28" text-anchor="middle" class="h">Employees — Мастера</text>
+    <text x="18" y="72" class="field">PK EmployeeId</text>
+    <text x="18" y="99" class="field">LastName, FirstName</text>
+    <text x="18" y="126" class="field">MiddleName</text>
+  </g>
+
+  <g transform="translate(465 90)">
+    <rect width="270" height="160" rx="5" class="box"/>
+    <rect width="270" height="42" rx="5" class="head"/>
+    <text x="135" y="28" text-anchor="middle" class="h">Services — Услуги</text>
+    <text x="18" y="72" class="field">PK ServiceId</text>
+    <text x="18" y="99" class="field">ServiceName</text>
+    <text x="18" y="126" class="field">Price, DurationMinutes</text>
+  </g>
+
+  <g transform="translate(395 315)">
+    <rect width="410" height="235" rx="5" class="box"/>
+    <rect width="410" height="42" rx="5" class="head"/>
+    <text x="205" y="28" text-anchor="middle" class="h">Schedule — Записи</text>
+    <text x="20" y="72" class="field">PK ScheduleId</text>
+    <text x="20" y="100" class="field">ServiceDate, ServiceTime</text>
+    <text x="20" y="137" class="field">FK ClientId → Clients.ClientId</text>
+    <text x="20" y="170" class="field">FK ServiceId → Services.ServiceId</text>
+    <text x="20" y="203" class="field">FK EmployeeId → Employees.EmployeeId</text>
+  </g>
+</svg>

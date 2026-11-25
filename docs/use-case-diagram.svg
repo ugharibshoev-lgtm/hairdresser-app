@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 26px; font-weight: 700; }
+    .system { fill: #f8fbff; stroke: #1f4e79; stroke-width: 2; }
+    .case { fill: #ffffff; stroke: #1f4e79; stroke-width: 2; }
+    .line { stroke: #4d6b86; stroke-width: 2; }
+    .label { font-size: 17px; }
+    .sub { font-size: 15px; fill: #526275; }
+  </style>
+  <text x="600" y="42" text-anchor="middle" class="title">Диаграмма вариантов использования</text>
+  <rect x="330" y="80" width="770" height="545" rx="8" class="system"/>
+  <text x="355" y="112" class="label" font-weight="700">Информационная система парикмахерской</text>
+
+  <g transform="translate(75 265)">
+    <circle cx="70" cy="30" r="25" fill="#dceaf7" stroke="#1f4e79" stroke-width="2"/>
+    <line x1="70" y1="55" x2="70" y2="125" class="line"/>
+    <line x1="25" y1="82" x2="115" y2="82" class="line"/>
+    <line x1="70" y1="125" x2="32" y2="178" class="line"/>
+    <line x1="70" y1="125" x2="108" y2="178" class="line"/>
+    <text x="70" y="212" text-anchor="middle" class="label">Администратор</text>
+  </g>
+
+  <line x1="215" y1="345" x2="490" y2="165" class="line"/>
+  <line x1="215" y1="345" x2="490" y2="275" class="line"/>
+  <line x1="215" y1="345" x2="490" y2="385" class="line"/>
+  <line x1="215" y1="345" x2="490" y2="495" class="line"/>
+  <line x1="215" y1="345" x2="815" y2="190" class="line"/>
+  <line x1="215" y1="345" x2="815" y2="335" class="line"/>
+  <line x1="215" y1="345" x2="815" y2="480" class="line"/>
+
+  <g class="case">
+    <ellipse cx="610" cy="165" rx="120" ry="42"/><ellipse cx="610" cy="275" rx="120" ry="42"/>
+    <ellipse cx="610" cy="385" rx="120" ry="42"/><ellipse cx="610" cy="495" rx="120" ry="42"/>
+    <ellipse cx="920" cy="190" rx="120" ry="42"/><ellipse cx="920" cy="335" rx="120" ry="42"/>
+    <ellipse cx="920" cy="480" rx="120" ry="42"/>
+  </g>
+  <text x="610" y="160" text-anchor="middle" class="label">Просмотр клиентов</text><text x="610" y="183" text-anchor="middle" class="sub">добавление и удаление</text>
+  <text x="610" y="270" text-anchor="middle" class="label">Работа с мастерами</text><text x="610" y="293" text-anchor="middle" class="sub">добавление и удаление</text>
+  <text x="610" y="380" text-anchor="middle" class="label">Работа с услугами</text><text x="610" y="403" text-anchor="middle" class="sub">цена и длительность</text>
+  <text x="610" y="490" text-anchor="middle" class="label">Ведение записей</text><text x="610" y="513" text-anchor="middle" class="sub">клиент, мастер, услуга</text>
+  <text x="920" y="185" text-anchor="middle" class="label">Просмотр расписания</text>
+  <text x="920" y="330" text-anchor="middle" class="label">Формирование отчёта</text><text x="920" y="353" text-anchor="middle" class="sub">выручка мастеров</text>
+  <text x="920" y="475" text-anchor="middle" class="label">Обновление данных</text>
+</svg>
